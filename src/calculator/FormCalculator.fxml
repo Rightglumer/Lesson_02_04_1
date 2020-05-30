@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<GridPane hgap="4" vgap="4" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="calculator.Controller">
+   <stylesheets>
+       <URL value="@/css/style.css" />
+   </stylesheets>
+
+    <TextArea fx:id="res" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="4" editable="false"/>
+
+    <TextArea fx:id="txtSubTotal" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="3" editable="false" styleClass="txt-SubTotal-Style"/>
+    <TextArea fx:id="txtAction" GridPane.rowIndex="2" GridPane.columnIndex="4" editable="false" styleClass="txt-Action-Style"/>
+
+    <Button fx:id="Clr" text="AC" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="clear-button" onAction="#btnClearClick"/>
+    <Button fx:id="Sgn" text="±"  GridPane.rowIndex="3" GridPane.columnIndex="2" styleClass="action-button" onAction="#btnMainClick" />
+    <Button fx:id="Prc" text="\%" GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="action-button" onAction="#btnPrcClick"/>
+    <Button fx:id="Div" text="/"  GridPane.rowIndex="3" GridPane.columnIndex="4" styleClass="action-button" onAction="#btnActionClick" />
+
+    <Button fx:id="d7"  text="7"  GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#btnMainClick"/>
+    <Button fx:id="d8"  text="8"  GridPane.rowIndex="4" GridPane.columnIndex="2" onAction="#btnMainClick" />
+    <Button fx:id="d9"  text="9"  GridPane.rowIndex="4" GridPane.columnIndex="3" onAction="#btnMainClick" />
+    <Button fx:id="Mul" text="x"  GridPane.rowIndex="4" GridPane.columnIndex="4" styleClass="action-button" onAction="#btnActionClick" />
+
+    <Button fx:id="d4"  text="4"  GridPane.rowIndex="5" GridPane.columnIndex="1" onAction="#btnMainClick" />
+    <Button fx:id="d5"  text="5"  GridPane.rowIndex="5" GridPane.columnIndex="2" onAction="#btnMainClick" />
+    <Button fx:id="d6"  text="6"  GridPane.rowIndex="5" GridPane.columnIndex="3" onAction="#btnMainClick" />
+    <Button fx:id="Min" text="-"  GridPane.rowIndex="5" GridPane.columnIndex="4" styleClass="action-button" onAction="#btnActionClick" />
+
+    <Button fx:id="d1"  text="1"  GridPane.rowIndex="6" GridPane.columnIndex="1" onAction="#btnMainClick" />
+    <Button fx:id="d2"  text="2"  GridPane.rowIndex="6" GridPane.columnIndex="2" onAction="#btnMainClick" />
+    <Button fx:id="d3"  text="3"  GridPane.rowIndex="6" GridPane.columnIndex="3" onAction="#btnMainClick" />
+    <Button fx:id="Pls" text="+"  GridPane.rowIndex="6" GridPane.columnIndex="4" styleClass="action-button" onAction="#btnActionClick" />
+
+    <Button fx:id="d0"  text="0"  GridPane.rowIndex="7" GridPane.columnIndex="1" GridPane.columnSpan="2" onAction="#btnMainClick"/>
+    <Button fx:id="Dot" text=","  GridPane.rowIndex="7" GridPane.columnIndex="3" onAction="#btnMainClick" />
+    <Button fx:id="Clc" text="="  GridPane.rowIndex="7" GridPane.columnIndex="4" styleClass="action-button" onAction="#btnActionClick"/>
+</GridPane>
